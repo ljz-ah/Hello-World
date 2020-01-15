@@ -18,6 +18,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //忽略警告信息
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def apk = output.outputFile
+//            if (apk != null && apk.name.endsWith('.apk')) {
+//                //${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}
+//                output.outputFile = new File(apk.parent + "/", "atest.apk")
+//            }
+//        }
+//    }
+
 }
 
 dependencies {
