@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * 测试自动化打包
+     */
     fun test(v:View){
 
         tv_content.text="I  LOVE  YOU "
